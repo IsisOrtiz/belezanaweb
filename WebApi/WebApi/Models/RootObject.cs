@@ -14,7 +14,7 @@ namespace WebApi.Models
 
     public class Inventory
     {
-        public int quantity { get; set; }
+        internal int quantity { get; set; }
         public List<Warehouse> warehouses { get; set; }
     }
 
@@ -23,6 +23,6 @@ namespace WebApi.Models
         public int sku { get; set; }
         public string name { get; set; }
         public Inventory inventory { get; set; }
-        public bool isMarketable { get; set; }
+        internal bool isMarketable { get; set; }
     }
 }
